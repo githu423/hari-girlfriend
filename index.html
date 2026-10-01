@@ -1,0 +1,275 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>My Girl Day ❤️ — untuk Sinta Liya</title>
+  <meta name="description" content="Hadiah spesial Hari My Girl Day dari Ibah Misbah untuk Sinta Liya.">
+  <meta name="theme-color" content="#23091a">
+  <meta property="og:title" content="Happy My Girl Day — Sinta Liya ❤️">
+  <meta property="og:description" content="Hadiah spesial Hari My Girl Day dari Ibah Misbah.">
+  <meta property="og:type" content="website">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='%23ff4d6d' d='M12 21s-8.2-5.4-10.6-9.4C-.7 8.5 1.6 4.4 5.5 4.4c2.4 0 4.1 1.4 6.5 4.1 2.4-2.7 4.1-4.1 6.5-4.1 3.9 0 6.2 4.1 4.1 7.2C20.2 15.6 12 21 12 21z'/%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Great+Vibes&family=Quicksand:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <canvas id="fx" aria-hidden="true"></canvas>
+
+  <nav id="dots" aria-label="Progres cerita"></nav>
+
+  <button id="musicBtn" aria-label="Suara musik" aria-pressed="true">
+    <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true">
+      <path d="M9 18.5V6.2c0-.5.3-.9.8-1l8-2c.8-.2 1.5.4 1.5 1.2V16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+      <circle cx="6.5" cy="18.5" r="2.6" fill="currentColor"/>
+      <circle cx="17" cy="16" r="2.6" fill="currentColor"/>
+    </svg>
+    <span id="musicSlash" aria-hidden="true"></span>
+  </button>
+
+  <!-- ============ MASKOT PINGGUIN (Badtz style) ============ -->
+  <div id="mascot" aria-hidden="false">
+    <div id="bubble"><span id="bubbleText">aku di sini jaga-jaga… dan buat malu-maluin 😳</span></div>
+    <button id="maruBtn" class="maru-btn" aria-label="Penguin maskot (klik-klik aja)">
+      <svg viewBox="0 0 220 250" aria-hidden="true">
+        <ellipse cx="72" cy="236" rx="26" ry="12" fill="#f9a03f"/>
+        <ellipse cx="148" cy="236" rx="26" ry="12" fill="#f9a03f"/>
+        <g class="maru-body">
+          <ellipse cx="110" cy="126" rx="80" ry="98" fill="#2b2b38"/>
+          <ellipse cx="110" cy="160" rx="52" ry="56" fill="#fff6ee"/>
+          <ellipse cx="30" cy="152" rx="15" ry="33" fill="#1f1f29" transform="rotate(20 30 152)"/>
+          <g class="maru-arm">
+            <ellipse cx="190" cy="120" rx="15" ry="35" fill="#1f1f29" transform="rotate(-38 190 120)"/>
+            <path d="M0 8C-9 0-9-8-4.5-8-1.5-8 0-5 0-3.5 0-5 1.5-8 4.5-8 9-8 9 0 0 8Z"
+                  transform="translate(206 64) scale(1.7)" fill="#ff4d6d"/>
+          </g>
+          <g class="maru-face">
+            <circle cx="78" cy="92" r="19" fill="#ffffff"/>
+            <circle cx="142" cy="92" r="19" fill="#ffffff"/>
+            <g class="maru-blink">
+              <circle cx="78" cy="92" r="19" fill="#2b2b38"/>
+              <circle cx="142" cy="92" r="19" fill="#2b2b38"/>
+            </g>
+            <circle cx="84" cy="97" r="8.5" fill="#14141a"/>
+            <circle cx="136" cy="97" r="8.5" fill="#14141a"/>
+            <circle cx="86.5" cy="93.5" r="2.6" fill="#ffffff"/>
+            <circle cx="138.5" cy="93.5" r="2.6" fill="#ffffff"/>
+            <rect x="56" y="72" width="40" height="7" rx="3.5" fill="#0a0a10" transform="rotate(12 76 75)"/>
+            <rect x="124" y="72" width="40" height="7" rx="3.5" fill="#0a0a10" transform="rotate(-12 144 75)"/>
+            <path d="M98 108Q110 104 122 108 116 122 110 124 104 122 98 108Z" fill="#f9a03f"/>
+            <ellipse cx="58" cy="122" rx="9" ry="5.5" fill="#ffb3c1" opacity=".75"/>
+            <ellipse cx="162" cy="122" rx="9" ry="5.5" fill="#ffb3c1" opacity=".75"/>
+            <path d="M96 138Q110 146 124 138" stroke="#14141a" stroke-width="4" fill="none" stroke-linecap="round"/>
+            <path d="M0 7C-7.5 0-7.5-6-3.4-6-1.1-6 0-3.8 0-2.6 0-3.8 1.1-6 3.4-6 7.5-6 7.5 0 0 7Z"
+                  transform="translate(110 165) scale(1.5)" fill="#ff4d6d"/>
+          </g>
+        </g>
+      </svg>
+    </button>
+  </div>
+
+  <main id="stage">
+    <!-- ============ SLIDE 0 : KOTAK HADIAH ============ -->
+    <section class="slide active" id="s-gift">
+      <div class="card gift-card">
+        <p class="kicker">ada sesuatu buat kamu…</p>
+        <h1 class="gift-title">dari <span class="gold">developer-mu</span> 💻</h1>
+        <button id="giftBox" class="gift" aria-label="Buka kotak hadiah">
+          <svg viewBox="0 0 200 190" aria-hidden="true">
+            <defs>
+              <linearGradient id="giftG" x1="0" y1="0" x2="0" y2="1">
+                <stop offset="0" stop-color="#ff9db4"/><stop offset="1" stop-color="#e6495b"/>
+              </linearGradient>
+              <linearGradient id="giftLidG" x1="0" y1="0" x2="0" y2="1">
+                <stop offset="0" stop-color="#ffb1c5"/><stop offset="1" stop-color="#f26a80"/>
+              </linearGradient>
+            </defs>
+            <g class="gift-lid">
+              <rect x="30" y="62" width="140" height="30" rx="9" fill="url(#giftLidG)"/>
+              <rect x="92" y="62" width="16" height="30" fill="#f7c96b"/>
+              <path d="M100 56C88 34 56 30 58 48 60 62 84 62 100 56Z" fill="#f7c96b"/>
+              <path d="M100 56C112 34 144 30 142 48 140 62 116 62 100 56Z" fill="#f7c96b"/>
+              <circle cx="100" cy="55" r="8" fill="#e8b24e"/>
+            </g>
+            <g class="gift-body">
+              <rect x="40" y="88" width="120" height="84" rx="10" fill="url(#giftG)"/>
+              <rect x="92" y="88" width="16" height="84" fill="#f7c96b"/>
+              <circle cx="76" cy="122" r="4.5" fill="#5c1626"/>
+              <circle cx="124" cy="122" r="4.5" fill="#5c1626"/>
+              <path d="M90 138Q100 148 110 138" stroke="#5c1626" stroke-width="3.5" fill="none" stroke-linecap="round"/>
+              <circle cx="100" cy="164" r="13" fill="#fff6ee"/>
+              <path d="M0 5.5C-5.8 0-5.8-4.8-2.6-4.8-1-4.8 0-3.3 0-2.4 0-3.3 1-4.8 2.6-4.8 5.8-4.8 5.8 0 0 5.5Z"
+                    transform="translate(100 164) scale(1.15)" fill="#e6495b"/>
+            </g>
+          </svg>
+        </button>
+        <p class="hint">psst… <b>ketuk kotaknya</b> 💝<br>
+          <span class="micro">(bug-nya disengaja: kamu bakal senyum sendiri)</span></p>
+      </div>
+    </section>
+
+    <!-- ============ SLIDE 1 : UCAPAN ============ -->
+    <section class="slide" id="s-hello">
+      <div class="card">
+        <p class="kicker">— dengan segenap baris kode di dunia —</p>
+        <h1 class="title-shine">Happy My Girl Day</h1>
+        <p class="for">untuk wanita paling spesial di seluruh server universe</p>
+        <h2 class="name script" id="nameAnim">Sinta Liya</h2>
+        <div class="letter">
+          <p data-line>Selamat Hari <b>My Girl Day</b>, sayangku 🎀</p>
+          <p data-line>Hari ini langit lebih cerah, kode jalan tanpa error, dan kopi terasa lebih enak —<br>bukan keajaiban, tapi karena kamu.</p>
+          <p data-line>Cantik hari ini. Cantik besok. Cantik selamanya 💘</p>
+        </div>
+        <p class="from">— <b>Ibah Misbah</b>, developer-mu<br>&amp; satu-satunya orang yang boleh akses semua baris hatiku</p>
+        <button class="btn" data-next>Lanjut 🌹</button>
+      </div>
+    </section>
+
+    <!-- ============ SLIDE 2 : MAWAR ============ -->
+    <section class="slide" id="s-rose">
+      <div class="card rose-card">
+        <p class="kicker">🌹 bonus khusus: mawar kesukaanmu</p>
+        <h1 class="title">Mawar Merah<span class="dot-red">.</span></h1>
+        <p class="sub">Kirim mawar ke kotak Sinta. Sekali aja boleh. Seribu kali juga boleh. Gratis, selamanya.</p>
+        <div class="rose-stage">
+          <div class="rose-box" id="roseBox">
+            <div class="rose-box-lid"></div>
+            <div class="rose-box-label">UNTUK SINTA ❤</div>
+          </div>
+        </div>
+        <div class="rose-controls">
+          <button id="sendRose" class="btn">🌹 Kirim Mawar</button>
+          <span class="rose-count" id="roseCount">0 mawar</span>
+        </div>
+        <p class="rose-msg" id="roseMsg">kotak masih kosong… isinya ya 😳</p>
+        <button class="btn btn-ghost" data-next>Kotak kejutan berikutnya ✨</button>
+      </div>
+    </section>
+
+    <!-- ============ SLIDE 3 : VIDEO ============ -->
+    <section class="slide" id="s-video">
+      <div class="card video-card">
+        <p class="kicker">🎬 satu kejutan lagi, yang agak istimewa</p>
+        <h1 class="title">Deg-Degan, Tapi Manis</h1>
+        <p class="sub" id="videoSub">Tahan tombolnya sampai penuh, Sayang… biar deg-degannya nampol 💓</p>
+        <button id="holdBtn" class="hold" aria-label="Tahan untuk membuka video">
+          <svg viewBox="0 0 120 120" aria-hidden="true">
+            <defs>
+              <linearGradient id="ringG" x1="0" y1="0" x2="1" y2="1">
+                <stop offset="0" stop-color="#ffd9a0"/><stop offset="1" stop-color="#ff5d7d"/>
+              </linearGradient>
+            </defs>
+            <circle cx="60" cy="60" r="52" fill="none" stroke="rgba(255,255,255,.14)" stroke-width="8"/>
+            <circle id="ring" cx="60" cy="60" r="52" fill="none" stroke="url(#ringG)" stroke-width="8"
+                    stroke-linecap="round" stroke-dasharray="326.73" stroke-dashoffset="326.73"
+                    transform="rotate(-90 60 60)"/>
+            <path id="holdHeart"
+                  d="M0 34C-24 16-24-6-12-6-6-6 0-1 0 3 0-1 6-6 12-6 24-6 24 16 0 34Z"
+                  transform="translate(60 44)" fill="#ff5d7d"/>
+          </svg>
+          <span class="hold-tip" id="holdTip">TAHAN</span>
+        </button>
+        <div id="videoStage" class="video-stage hidden" aria-live="polite"></div>
+      </div>
+    </section>
+
+    <!-- ============ SLIDE 4 : SERTIFIKAT ============ -->
+    <section class="slide" id="s-cert">
+      <div class="cert-wrap">
+        <div class="cert-head">
+          <p class="kicker">📜 yang terakhir… dan yang paling resmi</p>
+          <h1 class="title">Sertifikat My Girl Day</h1>
+          <p class="sub">(sah di mata kamu, sah di hati dunia — nggak, di hatiku aja 😌)</p>
+        </div>
+
+        <div class="cert" id="certEl">
+          <div class="cert-frame"></div>
+          <svg class="cert-rose c-tl" viewBox="0 0 64 64" aria-hidden="true"><use href="#roseHead"/></svg>
+          <svg class="cert-rose c-tr" viewBox="0 0 64 64" aria-hidden="true"><use href="#roseHead"/></svg>
+          <svg class="cert-rose c-bl" viewBox="0 0 64 64" aria-hidden="true"><use href="#roseHead"/></svg>
+          <svg class="cert-rose c-br" viewBox="0 0 64 64" aria-hidden="true"><use href="#roseHead"/></svg>
+          <div class="cert-in">
+            <span class="cert-no">No. 001 / MY-GIRL-DAY / 2026</span>
+            <p class="cert-kicker">S E R T I F I K A T</p>
+            <h2 class="cert-title">Selamat Hari My Girl Day</h2>
+            <div class="cert-rule"><span></span>
+              <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path fill="#d4a24a" d="M12 21s-8.2-5.4-10.6-9.4C-.7 8.5 1.6 4.4 5.5 4.4c2.4 0 4.1 1.4 6.5 4.1 2.4-2.7 4.1-4.1 6.5-4.1 3.9 0 6.2 4.1 4.1 7.2C20.2 15.6 12 21 12 21z"/></svg>
+              <span></span>
+            </div>
+            <p class="cert-to">diberikan dengan penuh cinta kepada</p>
+            <h3 class="cert-name">Sinta Liya</h3>
+            <p class="cert-reason">karena kamu satu baris kode terindah yang pernah<br>jalan di hidup developer ini ❤️</p>
+            <div class="cert-stamp" aria-hidden="true">
+              <span>DIPERSEMBAHKAN</span><span>• DENGAN CINTA TULEN •</span><span>100% ORIGINAL</span>
+            </div>
+            <div class="cert-sigs">
+              <div class="sig-cell">
+                <div class="sig-space" id="senderSigWrap"><span class="sig-fallback">Ibah Misbah</span></div>
+                <div class="sig-line"></div>
+                <b>Ibah Misbah</b>
+                <span class="sig-cap">Si Pemberi Cinta</span>
+              </div>
+              <div class="sig-cell sig-date"><p id="certDate">Bandung, 1 Oktober 2026</p></div>
+              <div class="sig-cell">
+                <div class="sig-space">
+                  <canvas id="sigPad" width="460" height="110" aria-label="Area tanda tangan Sinta Liya"></canvas>
+                  <span class="sig-hint" id="sigHint">✍️ tulis di sini, Sayang</span>
+                </div>
+                <div class="sig-line"></div>
+                <b>Sinta Liya</b>
+                <span class="sig-cap">My Girl Kesayangan</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <ol class="steps">
+          <li><b>1.</b> Baca sertifikatnya dengan bangga — kamu layak banget.</li>
+          <li><b>2.</b> Tanda tangan di kotak <i>“Tanda Tangan Kamu”</i> — sekali tulis, <b>awet selamanya</b>, nggak bisa dihapus. (Seperti cintaku: konsisten 😌)</li>
+          <li><b>3.</b> Unduh &amp; simpan — ini bukti sah kamu My Girl-ku.</li>
+        </ol>
+        <button id="dlCert" class="btn btn-gold btn-big">📥 Unduh Sertifikat</button>
+      </div>
+    </section>
+
+    <!-- ============ SLIDE 5 : PENUTUP ============ -->
+    <section class="slide" id="s-end">
+      <div class="card end-card">
+        <div class="end-hearts" aria-hidden="true">💌&nbsp;❤️&nbsp;💌</div>
+        <h1 class="title-shine">The End?</h1>
+        <p class="sub">Nggak ada ending. Kita masih di chapter paling indah 📖</p>
+        <div class="letter">
+          <p data-line>Dengan segenap baris kode, sisa kuota, dan seluruh isi hati,</p>
+          <p data-line class="from">— <b>Ibah Misbah</b> 💘</p>
+        </div>
+        <button class="btn" id="replay">↺ Tonton lagi dari awal</button>
+        <p class="micro end-credit">dibuat dengan ❤️ + ☕ + CSS murni oleh developer-mu<br>© My Girl Day — Sinta Liya &amp; Ibah Misbah, selamanya</p>
+      </div>
+    </section>
+  </main>
+
+  <div id="toast" role="status" aria-live="polite"></div>
+
+  <!-- definisi kepala mawar (dipakai ulang di sudut sertifikat) -->
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+    <defs>
+      <g id="roseHead">
+        <ellipse rx="17" ry="9" transform="rotate(-38)" fill="#b7202f"/>
+        <ellipse rx="17" ry="9" transform="rotate(38)" fill="#b7202f"/>
+        <circle r="15.5" fill="#cf2b3c"/>
+        <circle r="11" fill="#e2435a"/>
+        <circle r="6.5" fill="#cf2b3c"/>
+        <circle r="2.6" fill="#8f1826"/>
+      </g>
+    </defs>
+  </svg>
+
+  <noscript>
+    <div class="noscript">Nyalakan JavaScript dulu ya, Sayang 😅 (website ini butuh sihirnya)</div>
+  </noscript>
+
+  <script src="app.js"></script>
+</body>
+</html>
